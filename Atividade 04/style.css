@@ -1,0 +1,27 @@
+img {
+    max-width:500px;
+    height:auto;
+    transition: 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    width:800px;
+    height:300px;
+    background-image: url("img/A.jpeg");
+    background-size:cover;
+}
+
+.galeria {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr)
+}
+
+@media (max-width:600px) {
+    .galeria {
+        grid-template-columns:repeat(2, 1fr)
+    }
+}
